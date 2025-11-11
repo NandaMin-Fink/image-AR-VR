@@ -7,7 +7,26 @@
   </head>
   <body>
     <a-scene>
-      <a-sky src="" radius="30"></a-sky>
+      <!-- Background sky -->
+      <a-sky color="#87CEEB" radius="30"></a-sky>
+
+      <!-- Ground plane (sand) -->
+      <a-plane color="#EDC9AF" rotation="-90 0 0" height="100" width="100"></a-plane>
+
+      <!-- Base block -->
+      <a-box color="#D2B48C" width="3" height="1" depth="3" position="0 0.5 -5"></a-box>
+
+      <!-- Middle block -->
+      <a-box color="#D2B48C" width="2" height="1" depth="2" position="0 1.5 -5"></a-box>
+
+      <!-- Top block -->
+      <a-box color="#D2B48C" width="1" height="1" depth="1" position="0 2.5 -5"></a-box>
+
+      <!-- Cone (roof) -->
+      <a-cone color="#C2B280" height="1.2" radius-bottom="0.7" radius-top="0.1" position="0 3.3 -5"></a-cone>
+    </a-scene>
+    <!-- <a-scene>
+      <a-sky src="assets/sky1.jpg" radius="30"></a-sky>
 
       <a-box src="" position="-2 0.5 -4"></a-box>
       <a-sphere src="" radius="0.5" position="0 0.5 -3"></a-sphere>
@@ -16,6 +35,6 @@
 
       <a-plane src="" rotation="-90 0 0" height="100" width="100"></a-plane>
 
-    </a-scene>
+    </a-scene> -->
   </body>
 </html>
